@@ -51,19 +51,22 @@ class HomeScreenState extends State<HomeScreen> {
           ),
         ),
         actions: [
-          Column(
-            children: [
-              SvgPicture.asset('assets/connection_active.svg'),
-              Text(
-                'Connected',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 10,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w400,
+          Container(
+            margin: EdgeInsets.only(right: 20),
+            child: Column(
+              children: [
+                SvgPicture.asset('assets/connection_active.svg'),
+                Text(
+                  'Connected',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 10,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           )
         ],
       ),
